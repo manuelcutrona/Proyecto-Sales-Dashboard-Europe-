@@ -1,9 +1,4 @@
-# Proyecto-Sales-Dashboard-Europe-
-Perfecto, Manuel 🙌. Aquí tienes tu **README estructurado como Informe explicativo del análisis**, pero manteniendo tu estilo en primera persona y sin rollos académicos de más:
-
----
-
-# Proyecto: Sales Dashboard (Europe)
+## Proyecto-Sales-Dashboard-Europe-
 
 ## Objetivo del análisis
 
