@@ -1,55 +1,26 @@
-## Proyecto-Sales-Dashboard-Europe-
+Proyecto: Sales Dashboard Europe
+Objetivo del análisis
 
-## Objetivo del análisis
+Quería entender mejor cómo se comportaban las ventas en Europa a partir de un dataset bastante grande de transacciones. Para ello, limpié los datos, añadí columnas que aportaran más contexto y, finalmente, construí un dashboard visual que resumiera de forma clara los puntos clave del análisis.
 
-El objetivo era entender mejor las ventas en Europa a partir de un dataset grande de transacciones. Mi idea fue limpiar los datos, sacar nuevas columnas que me dieran más contexto y acabar construyendo un dashboard claro y visual que resumiera los puntos clave.
+Limpieza y transformación de datos
 
-## Proceso de limpieza y transformación
+Antes de pasar al dashboard, trabajé la calidad de la información. Lo primero fue quedarme solo con los países europeos, utilizando la función QUERY. Ya la había empleado en otros proyectos y, aunque no formaba parte del material recomendado, me resultó práctica en este caso.
 
-Lo primero fue filtrar los países europeos usando `QUERY`, una función que ya conocía de otros proyectos aunque no viniera en el material recomendado.
+Mientras exploraba el dataset me encontré con varios detalles interesantes. Los precios negativos resultaron ser devoluciones, los Unit Price iguales a cero correspondían a productos de cortesía y los registros con InvoiceNo vacío también eran devoluciones. Con esta información creé una columna nueva llamada Transaction Type, que clasifica cada operación como Sales, Return o Complimentary.
 
-Al revisar los datos encontré varias cosas:
+Para enriquecer el análisis añadí un par de campos extra. Por un lado, Total by Transaction, calculado como Unit Price * Quantity, que me permitió medir los importes reales. Por otro, Period of Day, que clasifica las ventas según la hora de la factura en Morning, Afternoon o Evening. Finalmente, eliminé las filas sin Customer ID ni Unit Price, ya que no aportaban nada al estudio.
 
-* **Precios negativos** → resultaron ser devoluciones.
-* **Unit Price a cero** → productos complimentary.
-* **InvoiceNo vacío** → también devoluciones.
+Construcción del dashboard
 
-Con eso creé una columna nueva llamada *Transaction Type* que clasifica cada operación como *Sales*, *Return* o *Complimentary*.
+Con los datos ya listos, pasé a crear el dashboard en Google Sheets. En la parte superior coloqué los principales KPIs: el total de ventas en euros, el total de operaciones incluyendo devoluciones y el valor medio de los pedidos. A partir de ahí, añadí gráficos que ayudaran a visualizar mejor las tendencias.
 
-Añadí también:
+El primero muestra las ventas totales por país, lo que permite ver con claridad dónde se concentra el negocio. Otro gráfico refleja el porcentaje de ventas según el momento del día, útil para identificar hábitos de compra. También incluí la proporción de operaciones por tipo de transacción (ventas, devoluciones y productos de cortesía) y, en paralelo, el impacto económico de cada categoría. Para hacer el dashboard interactivo, añadí dos slicers que permiten filtrar toda la información por país y por franja horaria.
 
-* **Total by Transaction** → `Unit Price * Quantity`, para analizar importes reales.
-* **Period of Day** → usando la hora de la factura, dividí las ventas en Morning, Afternoon y Evening.
+Key insights
 
-Por último, eliminé las filas sin `Customer ID` ni `Unit Price`, que no aportaban nada.
+Después de trabajar los datos y revisar el dashboard, me quedo con tres ideas clave. En primer lugar, el análisis por países confirma que Reino Unido, Francia y Alemania son los mercados más fuertes en volumen de ventas. En segundo lugar, la mayor parte de las operaciones se concentran por la tarde, superando el 60% del total. Y, por último, aunque las devoluciones representan un 22,5% de las operaciones, su peso económico es mucho menor de lo que parece al mirarlo solo en volumen.
 
-## Dashboard
-
-Con los datos ya limpios, pasé a construir el dashboard en Google Sheets:
-
-* **KPIs** arriba:
-
-  * *Total Sales (€)*
-  * *Total of Orders and Returns*
-  * *Avg Order Value (€)*
-
-* **Gráficos principales**:
-
-  * *Total Sales by Country* → para ver dónde se concentra el negocio.
-  * *% Sales by Period of Day* → para ver los hábitos de compra.
-  * *% by Transaction Type* → para ver la proporción de ventas, devoluciones y complimentary.
-  * *Total by Transaction Type* → para medir el impacto económico de cada tipo de transacción.
-
-Además añadí dos slicers (Country y Period of Day) que permiten filtrar todo el dashboard de forma interactiva.
-
-## Conclusiones
-
-Después de todo el proceso me quedo con tres ideas claras:
-
-* **Dónde**: Reino Unido, Francia y Alemania son los países más fuertes en ventas.
-* **Cuándo**: la tarde concentra más del 60% de las operaciones.
-* **Cómo**: un 22,5% de las operaciones son devoluciones, pero en dinero pesan mucho menos de lo que parece en volumen.
-
-Al final conseguí un dashboard sencillo pero útil, que cuenta una historia clara y permite jugar con los filtros para profundizar más cuando hace falta.
+El resultado es un dashboard sencillo pero muy práctico: cuenta una historia clara, resalta lo esencial y permite profundizar gracias a los filtros cuando es necesario.
 
 
