@@ -1,4 +1,5 @@
 Proyecto: Sales Dashboard Europe
+
 Objetivo del análisis
 
 Quería entender mejor cómo se comportaban las ventas en Europa a partir de un dataset bastante grande de transacciones. Para ello, limpié los datos, añadí columnas que aportaran más contexto y, finalmente, construí un dashboard visual que resumiera de forma clara los puntos clave del análisis.
