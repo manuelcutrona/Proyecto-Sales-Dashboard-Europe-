@@ -18,13 +18,19 @@ Con los datos ya listos, pasé a crear el dashboard en Google Sheets. En la part
 
 El primero muestra las ventas totales por país, lo que permite ver con claridad dónde se concentra el negocio. Otro gráfico refleja el porcentaje de ventas según el momento del día, útil para identificar hábitos de compra. También incluí la proporción de operaciones por tipo de transacción (ventas, devoluciones y productos de cortesía) y, en paralelo, el impacto económico de cada categoría.
 
-Para hacer el dashboard interactivo, añadí dos slicers que permiten filtrar toda la información por país y por franja horaria.
+Para hacer el dashboard interactivo, añadí dos slicers que permiten filtrar toda la información por país y por franja horaria. La incorporación de estos slicers no fue inmediata, ya que en Google Sheets presentan limitaciones. Ajustar las tablas dinámicas y conseguir que todos los gráficos respondieran correctamente exigió varias pruebas hasta dar con la configuración adecuada.
 
 El dashboard interactivo puede consultarse en Google Sheets en este enlace:
-Sales Dashboard Europe en Google Sheets
+https://docs.google.com/spreadsheets/d/1QYbJYHZ70qMkAB0j2Skn3NCNvcL8IIkQYDHzlhk73io/edit?usp=sharing
 
 Key insights
 
 Después de trabajar los datos y revisar el dashboard, me quedo con tres ideas clave. En primer lugar, el análisis por países confirma que Reino Unido, Francia y Alemania son los mercados más fuertes en volumen de ventas. En segundo lugar, la mayor parte de las operaciones se concentran por la tarde, superando el 60% del total. Y, por último, aunque las devoluciones representan un 22,5% de las operaciones, su peso económico es mucho menor de lo que parece al mirarlo solo en volumen.
 
 El resultado es un dashboard sencillo pero muy práctico: cuenta una historia clara, resalta lo esencial y permite profundizar gracias a los filtros cuando es necesario.
+
+Nota sobre interactividad
+
+Los slicers funcionan únicamente en la versión de Google Sheets. Cualquier exportación (Excel, CSV o PDF) es estática y no conserva interactividad. Para usar los filtros, accede al dashboard en Google Sheets:
+https://docs.google.com/spreadsheets/d/1QYbJYHZ70qMkAB0j2Skn3NCNvcL8IIkQYDHzlhk73io/edit?usp=sharing
+
