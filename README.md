@@ -25,7 +25,7 @@ https://docs.google.com/spreadsheets/d/1QYbJYHZ70qMkAB0j2Skn3NCNvcL8IIkQYDHzlhk7
 
 Key insights
 
-Después de trabajar los datos y revisar el dashboard, me quedo con tres ideas clave. En primer lugar, el análisis por países confirma que Reino Unido, Francia y Alemania son los mercados más fuertes en volumen de ventas. En segundo lugar, la mayor parte de las operaciones se concentran por la tarde, superando el 60% del total. Y, por último, aunque las devoluciones representan un 22,5% de las operaciones, su peso económico es mucho menor de lo que parece al mirarlo solo en volumen.
+Después de trabajar los datos y revisar el dashboard, me quedo con tres ideas clave. En primer lugar, el análisis por países confirma que Reino Unido, Francia y Alemania son los mercados más fuertes en volumen de ventas. En segundo lugar, la mayor parte de las operaciones se concentran por la tarde, superando el 60% del total. Y, por último, aunque las devoluciones representan menos de un 2% de las operaciones, su peso económico es mucho mayor de lo que parece al mirarlo solo en volumen.
 
 El resultado es un dashboard sencillo pero muy práctico: cuenta una historia clara, resalta lo esencial y permite profundizar gracias a los filtros cuando es necesario.
 
